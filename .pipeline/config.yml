@@ -6,6 +6,5 @@ steps:
     buildTarget: 'CF'
   dockerExecuteOnKubernetes:
     securityContext:
-      runAsUser: 1000480000
       allowPrivilegeEscalation: true
 
