@@ -11,5 +11,5 @@ steps:
       fsGroup: 1000480000
       allowPrivilegeEscalation: true
       seLinuxOptions:
-       level: 's0-s0:c0.c1023'
+       level: ''
 
