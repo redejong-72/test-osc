@@ -7,6 +7,5 @@ steps:
   dockerExecuteOnKubernetes:
     securityContext:
       runAsUser: 1000480000
-      fsGroup: 0
       allowPrivilegeEscalation: true
 
