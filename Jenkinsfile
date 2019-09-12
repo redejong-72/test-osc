@@ -4,6 +4,9 @@ node() {
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
+    stage('static checks') {
+        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'run test'
+   }
     stage('build') {
         mtaBuild script: this
    }
