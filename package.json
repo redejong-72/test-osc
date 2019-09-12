@@ -5,10 +5,11 @@
   "private": true,
   "dependencies": {
     "express": "4.15.3",
-    "body-parser": "1.17.2"
+    "body-parser": "1.17.2",
+    "@sap/hdi-deploy":"3.11.0"
   },
   "engines": {
-    "node": "6.x.x"
+    "node": "10.x.x"
   },  
   "scripts": {
     "start": "node server.js"
