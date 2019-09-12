@@ -6,7 +6,6 @@
   "dependencies": {
     "express": "4.15.3",
     "body-parser": "1.17.2",
-    "@sap/hdi-deploy":"3.11.0",
     "node-rdkafka":"2.6.1"
   },
   "engines": {
