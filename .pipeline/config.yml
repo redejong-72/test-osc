@@ -2,5 +2,7 @@ general:
   verbose: true
   
 steps:
+  artifactSetVersion:
+    gitSshUrl: git@github.com:redejong-72/test-osc.git
   mtaBuild:
     buildTarget: 'CF'
