@@ -4,5 +4,6 @@ general:
 steps:
   artifactSetVersion:
     gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
+    gitCommitId: ''
   mtaBuild:
     buildTarget: 'CF'
