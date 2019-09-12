@@ -5,6 +5,7 @@ node() {
         setupCommonPipelineEnvironment script:this
     }
     stage('static checks') {
+        artifactSetVersion script: this, buildTool: 'mta'
         npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'run test --if-present'
    }
     stage('build') {
