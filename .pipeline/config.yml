@@ -5,5 +5,6 @@ steps:
   artifactSetVersion:
     gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
     gitCommitId: ''
+    commitVersion: false
   mtaBuild:
     buildTarget: 'CF'
