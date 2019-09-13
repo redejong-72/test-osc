@@ -8,3 +8,5 @@ steps:
     commitVersion: false
   mtaBuild:
     buildTarget: 'CF'
+  influxWriteData:
+    influxDBServer: 'CICD'
