@@ -7,7 +7,8 @@ node() {
     }
     stage('static checks') {
         artifactSetVersion script: this, buildTool: 'mta'
-        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'run test --if-present'
+        //npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'run test --if-present'
+        sonarExecuteScan script: this
    }
     stage('build') {
         mtaBuild script: this
