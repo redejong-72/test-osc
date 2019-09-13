@@ -8,7 +8,7 @@ node() {
     }
     stage('static checks') {
         artifactSetVersion script: this, buildTool: 'mta'
-        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'audit fix'
+        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'i --package-lock-only && audit fix'
         //sonarExecuteScan script: this
    }
     stage('build') {
