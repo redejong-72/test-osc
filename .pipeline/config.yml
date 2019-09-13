@@ -9,4 +9,4 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   influxWriteData:
-    influxDBServer: jenkins
+    influxServer: jenkins
