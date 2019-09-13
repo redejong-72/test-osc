@@ -10,3 +10,5 @@ steps:
     buildTarget: 'CF'
   influxWriteData:
     influxServer: CICD
+  sonarExecuteScan:
+    instance: SonarCubeSPT
