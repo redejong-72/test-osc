@@ -15,6 +15,5 @@ node() {
    }
     stage('write stats') {
         influxWriteData script: this, 
-   }
   }
 }
