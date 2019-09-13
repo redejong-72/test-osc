@@ -17,3 +17,4 @@ node() {
         influxWriteData script: this, 
   }
 }
+}
