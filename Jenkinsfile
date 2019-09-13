@@ -7,14 +7,14 @@ node() {
     }
     stage('static checks') {
         artifactSetVersion script: this, buildTool: 'mta'
-        //npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'run test --if-present'
+        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'audit fix'
         sonarExecuteScan script: this
    }
     stage('build') {
         mtaBuild script: this
    }
     stage('write stats') {
-        influxWriteData script: this
+        influxWriteData script: this, 
    }
   }
 }
