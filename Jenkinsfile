@@ -2,6 +2,7 @@
 node() {
     durationMeasure (script: this, measurementName: 'build_duration') {
     stage('prepare') {
+        cleanWS ()
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
