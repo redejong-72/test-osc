@@ -5,8 +5,7 @@
   "private": true,
   "dependencies": {
     "express": "4.15.3",
-    "body-parser": "1.17.2",
-    "node-rdkafka":"2.6.1"
+    "body-parser": "1.17.2"
   },
   "engines": {
     "node": "10.x.x"
