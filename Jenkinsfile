@@ -1,5 +1,6 @@
 @Library('piper-lib-os') _
 node() {
+    durationMeasure (script: this, measurementName: 'build_duration') {
     stage('prepare') {
         checkout scm
         setupCommonPipelineEnvironment script:this
@@ -14,4 +15,5 @@ node() {
     stage('write stats') {
         influxWriteData script: this
    }
+  }
 }
