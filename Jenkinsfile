@@ -11,4 +11,7 @@ node() {
     stage('build') {
         mtaBuild script: this
    }
+    stage('write stats') {
+        influxWriteData script: this
+   }
 }
