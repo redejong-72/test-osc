@@ -12,4 +12,3 @@ steps:
     influxServer: CICD
   sonarExecuteScan:
     instance: SonarCubeSPT
-    dockerImage: newtmitch/sonar-scanner:3.3.0
