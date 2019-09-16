@@ -1,0 +1,15 @@
+general:
+  verbose: false
+  
+steps:
+  artifactSetVersion:
+    gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
+    gitCommitId: ''
+    commitVersion: false
+  mtaBuild:
+    buildTarget: 'CF'
+  influxWriteData:
+    influxServer: CICD
+  sonarExecuteScan:
+    instance: SonarCubeSPT
+    dockerImage: newtmitch/sonar-scanner:3.3.0
