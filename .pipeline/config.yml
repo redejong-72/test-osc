@@ -1,5 +1,5 @@
 general:
-  verbose: false
+  verbose: true
   
 steps:
   artifactSetVersion:
@@ -12,3 +12,4 @@ steps:
     influxServer: CICD
   sonarExecuteScan:
     instance: SonarCubeSPT
+    dockerImage: newtmitch/sonar-scanner
