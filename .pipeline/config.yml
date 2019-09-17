@@ -9,7 +9,7 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   influxWriteData:
-    influxServer: CICD
+    influxServer: influxDB
   sonarExecuteScan:
     instance: SonarCubeSPT
     dockerImage: newtmitch/sonar-scanner
