@@ -7,10 +7,10 @@ node() {
         setupCommonPipelineEnvironment script:this
     }
     stage('static checks') {
-        parallel NPM: {
+        parallel npmExecute: {
         artifactSetVersion script: this, buildTool: 'mta'
         npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'i --package-lock-only && npm audit fix'},
-             sonarscan: {
+             sonarScan: {
                 sonarExecuteScan script: this
             }
    }
