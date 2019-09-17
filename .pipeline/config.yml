@@ -13,4 +13,4 @@ steps:
   sonarExecuteScan:
     instance: SonarCubeSPT
     dockerImage: newtmitch/sonar-scanner
-    options: '-Dsonar.projectBaseDir=$WORKSPACE -Dsonar.analysis.mode=publish -Dsonar.scanner.metadataFilePath=$WORKSPACE/'
+    options: '-Dsonar.projectBaseDir=$WORKSPACE -Dsonar.analysis.mode=publish -Dsonar.scanner.metadataFilePath=$WORKSPACE/report-task.txt'
