@@ -9,7 +9,8 @@ node() {
     stage('static checks') {
         parallel npmExecute: {
         artifactSetVersion script: this, buildTool: 'mta'
-        npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'i --package-lock-only && npm audit fix'},
+        //npmExecute script: this, dockerImage: 'node:8-stretch', npmCommand: 'i --package-lock-only && npm audit fix'
+        },
              sonarScan: {
                 sonarExecuteScan script: this
             }
