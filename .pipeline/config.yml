@@ -1,23 +1,19 @@
 general:
   verbose: true
-  repoUrl: 'https://github.com/Alliander/SCP-pipelines.git'
-  branch: 'WIP'
-  path: 'WIP/Jenkinsfile'
-  credentialsId: 'svc-jenkins-github'
 
-steps:
-  pipelineExecute:
-    repoUrl: 'https://github.com/Alliander/SCP-pipelines.git'
-    branch: 'WIP'
-    path: 'WIP/Jenkinsfile'
-    credentialsId: 'svc-jenkins-github'
-    
+steps:  
   artifactSetVersion:
     gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
     gitCommitId: ''
     commitVersion: false
   mtaBuild:
     buildTarget: 'CF'
+  cloudFoundryDeploy:
+    cloudFoundry/org: alliander-cf-tst
+    cloudFoundry/space: 'CI'
+    cloudFoundry/credentialsId: cf-jenkins
+    deploytool: mtaDeployPlugin
+    credentials
   influxWriteData:
     influxServer: influxDB
   sonarExecuteScan:
