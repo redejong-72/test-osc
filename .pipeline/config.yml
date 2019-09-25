@@ -9,7 +9,7 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   cloudFoundryDeploy:
-    deploytool: 'mtaDeployPlugin'
+    deployTool: 'mtaDeployPlugin'
     deployType: standard
     cloudFoundry:
       org: alliander-cf-tst
