@@ -1,5 +1,9 @@
 general:
   verbose: true
+  JenkinsFileGitUrl: 'https://github.com/Alliander/SCP-pipelines.git'
+  JenkinsFileGitBranch: WIP
+  JenkinsFilePath: 'WIP/Jenkinsfile'
+  JenkinsFileGitCredentialId: 'svc-jenkins-github'
 
 steps:  
   artifactSetVersion:

@@ -13,10 +13,10 @@ def PATH
 // credentials needs to be configured in Jenkins accordingly.
 def CREDENTIALS_ID
 
-REPO = 'https://github.com/Alliander/SCP-pipelines.git'
-BRANCH = 'WIP'
-PATH = 'WIP/Jenkinsfile'
-CREDENTIALS_ID = 'svc-jenkins-github'
+REPO = commonPipelineEnvironment.configuration.general.JenkinsFileGitUrl
+BRANCH = commonPipelineEnvironment.configuration.general.JenkinsFileGitBranch
+PATH = commonPipelineEnvironment.configuration.general.JenkinsFilePath
+CREDENTIALS_ID = commonPipelineEnvironment.configuration.general.JenkinsFileGitCredentialId
  
 node() {
  
