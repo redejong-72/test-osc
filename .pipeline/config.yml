@@ -12,7 +12,7 @@ steps:
     deployTool: 'mtaDeployPlugin'
     deployType: standard
     cloudFoundry:
-      org: 'alliander-cf-tst'
+      org: 'Alliander-tst-cf'
       space: 'CI'
       credentialsId: cf-jenkins
   influxWriteData:
