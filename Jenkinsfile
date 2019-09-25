@@ -13,11 +13,7 @@ def PATH
 // credentials needs to be configured in Jenkins accordingly.
 def CREDENTIALS_ID
 
-REPO = commonPipelineEnvironment.configuration.general.JenkinsFileGitUrl
-BRANCH = commonPipelineEnvironment.configuration.general.JenkinsFileGitBranch
-PATH = commonPipelineEnvironment.configuration.general.JenkinsFilePath
-CREDENTIALS_ID = commonPipelineEnvironment.configuration.general.JenkinsFileGitCredentialId
- 
+
 node() {
  
     deleteDir()
@@ -25,6 +21,12 @@ node() {
     checkout scm
  
     setupCommonPipelineEnvironment(script: this)
+
+    REPO = commonPipelineEnvironment.configuration.general.JenkinsFileGitUrl
+    BRANCH = commonPipelineEnvironment.configuration.general.JenkinsFileGitBranch
+    PATH = commonPipelineEnvironment.configuration.general.JenkinsFilePath
+    CREDENTIALS_ID = commonPipelineEnvironment.configuration.general.JenkinsFileGitCredentialId
+ 
  
     //pipelineExecute (script: this)
  
