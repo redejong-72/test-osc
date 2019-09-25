@@ -1,12 +1,11 @@
+JENKINSFILE_GIT_URL: 'https://github.com/Alliander/SCP-pipelines.git'
+JENKINSFILE_GIT_BRANCH: 'WIP'
+JENKINSFILE_PATH: WIP/Jenkinsfile
+JENKINSFILE_GIT_CREDENTIALS_ID: svc-jenkins-github
 general:
   verbose: true
 
 steps:
-  pipelineExecute:
-    repoUrl: 'https://github.com/Alliander/SCP-pipelines.git'
-    branch: 'WIP'
-    path: WIP/Jenkinsfile
-    credentialsId: svc-jenkins-github
   artifactSetVersion:
     gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
     gitCommitId: ''
