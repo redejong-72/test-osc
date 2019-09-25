@@ -1,6 +1,6 @@
 #!groovy
  
-@Library('piper-library-os') _
+@Library('piper-lib-os') _
  
 // The coordinates of the central pipeline script
 def REPO
