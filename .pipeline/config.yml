@@ -3,7 +3,7 @@ general:
 
 steps:
   pipelineExecute:
-    repoUrl: 'https://github.com/Alliander/SCP-pipelines'
+    repoUrl: 'https://github.com/Alliander/SCP-pipelines.git'
     branch: 'WIP'
     path: WIP/Jenkinsfile
     credentialsId: svc-jenkins-github
