@@ -33,7 +33,7 @@ node() {
     CREDENTIALS_ID = commonPipelineEnvironment.getConfigProperty('JENKINSFILE_GIT_CREDENTIALS_ID')
 }
  
-//echo "Launching pipeline '${PATH}' from '${BRANCH}@${REPO}' using credentialsId '${CREDENTIALS_ID}'."
+echo "Launching pipeline '${PATH}' from '${BRANCH}@${REPO}' using credentialsId '${CREDENTIALS_ID}'."
  
 pipelineExecute repoUrl: REPO, branch: BRANCH, path: PATH, credentialsId: CREDENTIALS_ID
 
