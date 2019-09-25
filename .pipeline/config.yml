@@ -9,9 +9,10 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   cloudFoundryDeploy:
-    cloudFoundry/org: alliander-cf-tst
-    cloudFoundry/space: 'CI'
-    cloudFoundry/credentialsId: cf-jenkins
+    cloudFoundry:
+      org: alliander-cf-tst
+      space: 'CI'
+      credentialsId: cf-jenkins
     deploytool: mtaDeployPlugin
   influxWriteData:
     influxServer: influxDB
