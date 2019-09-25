@@ -1,6 +1,6 @@
 general:
   verbose: true
-  CREDENTIAL_ID: svc-jenkins-github
+  JENKINSFILE_GIT_CREDENTIALS_ID: svc-jenkins-github
   JENKINSFILE_GIT_URL: 'https://github.com/Alliander/SCP-pipelines'
   JENKINSFILE_GIT_BRANCH: WIP
   JENKINSFILE_PATH: WIP/Jenkinsfile
