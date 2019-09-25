@@ -1,5 +1,5 @@
 general:
-  verbose: true
+  verbose: false
   JenkinsFileGitUrl: 'https://github.com/Alliander/SCP-pipelines.git'
   JenkinsFileGitBranch: WIP
   JenkinsFilePath: 'WIP/Jenkinsfile'
