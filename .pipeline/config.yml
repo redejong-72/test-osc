@@ -1,6 +1,10 @@
 general:
-  verbose: false
-  
+  verbose: true
+  CREDENTIAL_ID: svc-jenkins-github
+  JENKINSFILE_GIT_URL: 'https://github.com/Alliander/SCP-pipelines'
+  JENKINSFILE_GIT_BRANCH: WIP
+  JENKINSFILE_PATH: WIP/Jenkinsfile
+
 steps:
   artifactSetVersion:
     gitSshUrl: 'git@github.com:redejong-72/test-osc.git'
