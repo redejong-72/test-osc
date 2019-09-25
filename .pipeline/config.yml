@@ -13,7 +13,6 @@ steps:
     cloudFoundry/space: 'CI'
     cloudFoundry/credentialsId: cf-jenkins
     deploytool: mtaDeployPlugin
-    credentials
   influxWriteData:
     influxServer: influxDB
   sonarExecuteScan:
