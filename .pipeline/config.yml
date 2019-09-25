@@ -9,11 +9,11 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
   cloudFoundryDeploy:
+    deploytool: 'mtaDeployPlugin'
     cloudFoundry:
       org: alliander-cf-tst
       space: 'CI'
       credentialsId: cf-jenkins
-    deploytool: mtaDeployPlugin
   influxWriteData:
     influxServer: influxDB
   sonarExecuteScan:
