@@ -10,6 +10,7 @@ steps:
     buildTarget: 'CF'
   cloudFoundryDeploy:
     deploytool: 'mtaDeployPlugin'
+    deployType: standard
     cloudFoundry:
       org: alliander-cf-tst
       space: 'CI'
