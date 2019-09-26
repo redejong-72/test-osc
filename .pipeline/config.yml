@@ -30,6 +30,6 @@ stages:
     nexus:
       url: 'https://nexus.alliander.local'
       repository: 'SCP-releases'
-      version: 3
+      version: nexus3
       credentialsId: svc-jenkins-to-nexus
       groupId: GROUP
