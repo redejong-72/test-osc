@@ -27,7 +27,7 @@ steps:
     options: '-Dsonar.projectBaseDir=$WORKSPACE -Dsonar.analysis.mode=publish -Dsonar.scanner.metadataFilePath=$WORKSPACE/report-task.txt'
 stages:
   artifactDeployment:
-    nexusConfiguration:
+    nexus:
       url: 'https://nexus.alliander.local'
       repository: 'SCP-releases'
       version: 3
