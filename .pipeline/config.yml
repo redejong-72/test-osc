@@ -1,5 +1,5 @@
 general:
-  verbose: false
+  verbose: true
   JenkinsFileGitUrl: 'https://github.com/Alliander/SCP-pipelines.git'
   JenkinsFileGitBranch: WIP
   JenkinsFilePath: 'WIP/Jenkinsfile'
@@ -25,3 +25,11 @@ steps:
     instance: SonarCubeSPT
     dockerImage: newtmitch/sonar-scanner
     options: '-Dsonar.projectBaseDir=$WORKSPACE -Dsonar.analysis.mode=publish -Dsonar.scanner.metadataFilePath=$WORKSPACE/report-task.txt'
+stages:
+  artifactDeployment:
+    nexusConfiguration:
+      url: 'https://nexus.alliander.local'
+      repository: 'SCP-releases'
+      version: 3
+      credentialsId: svc-jenkins-to-nexus
+      groupId: GROUP
